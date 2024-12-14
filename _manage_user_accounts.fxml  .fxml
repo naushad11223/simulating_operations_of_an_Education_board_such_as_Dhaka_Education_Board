@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dhakaeducationboard.Sabbir.ManageUserAccountsFxml">
+   <children>
+      <Label fx:id="muaNR" layoutX="172.0" layoutY="14.0" text="Manage User Accounts">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="aufBF" layoutX="63.0" layoutY="92.0" mnemonicParsing="false" onAction="#AddUser" text="Add User">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="duhJMF" layoutX="437.0" layoutY="94.0" mnemonicParsing="false" onAction="#DeleteUser" text="Delete User">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="eudNCDJ" layoutX="266.0" layoutY="91.0" mnemonicParsing="false" onAction="#EditUser" text="&quot;Edit User">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView layoutX="187.0" layoutY="174.0" prefHeight="198.0" prefWidth="237.0">
+        <columns>
+          <TableColumn fx:id="uiJHS" prefWidth="75.0" text="User ID" />
+          <TableColumn fx:id="usNJSJ" prefWidth="75.0" text="Username" />
+            <TableColumn fx:id="roND" prefWidth="75.0" text="Role" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

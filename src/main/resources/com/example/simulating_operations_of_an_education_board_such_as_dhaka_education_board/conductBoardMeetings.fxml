@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.simulating_operations_of_an_education_board_such_as_dhaka_education_board.ConductBoardMeetings"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #316969;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_education_board_such_as_dhaka_education_board.ConductBoardMeetingsController">
+   <children>
+      <DatePicker layoutX="355.0" layoutY="61.0" />
+      <TextField layoutX="82.0" layoutY="61.0" prefHeight="25.0" prefWidth="247.0" />
+      <TextArea layoutX="9.0" layoutY="122.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="45.0" layoutY="330.0" mnemonicParsing="false" text="Schedule Meeting" />
+      <TableView layoutX="229.0" layoutY="115.0" prefHeight="200.0" prefWidth="361.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Date" />
+          <TableColumn prefWidth="75.0" text="Time" />
+            <TableColumn prefWidth="209.33333333333331" text="Agenda" />
+        </columns>
+      </TableView>
+      <Label layoutX="45.0" layoutY="65.0" text="Titel">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.simulating_operations_of_an_education_board_such_as_dhaka_education_board.HandleDisciplinaryActions"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #316969;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_education_board_such_as_dhaka_education_board.HandleDisciplinaryActions">
+   <children>
+      <TableView layoutX="247.0" layoutY="22.0" prefHeight="116.0" prefWidth="331.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Case Id" />
+          <TableColumn prefWidth="102.66668701171875" text="StudentName" />
+            <TableColumn prefWidth="75.0" text="Issue" />
+            <TableColumn prefWidth="75.0" text="Status" />
+        </columns>
+      </TableView>
+      <TextArea layoutX="14.0" layoutY="14.0" prefHeight="165.0" prefWidth="200.0" />
+      <Label layoutX="432.0" layoutY="237.0" prefHeight="103.0" prefWidth="145.0" style="-fx-background-color: red;" text="Label" />
+      <ComboBox layoutX="64.0" layoutY="200.0" prefWidth="150.0" />
+      <Button layoutX="93.0" layoutY="289.0" mnemonicParsing="false" text="Submit Action" />
+   </children>
 </AnchorPane>

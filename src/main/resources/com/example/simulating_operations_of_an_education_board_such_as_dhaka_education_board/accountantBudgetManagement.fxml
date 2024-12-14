@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.simulating_operations_of_an_education_board_such_as_dhaka_education_board.AccountantBudgetManagementController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="483.0" prefWidth="641.0" style="-fx-background-color: #316969;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_education_board_such_as_dhaka_education_board.AccountantBudgetManagementController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="41.0" prefHeight="124.0" prefWidth="389.0">
+        <columns>
+          <TableColumn fx:id="departmentNameTC" prefWidth="137.33334732055664" text="Department Name" />
+          <TableColumn fx:id="requestedBudgetTC" minWidth="2.6666259765625" prefWidth="119.33332824707031" text="Requested Budget" />
+            <TableColumn fx:id="approvedBudgetTC" prefWidth="128.6666259765625" text="Approved Budget" />
+        </columns>
+      </TableView>
+      <Label fx:id="updateBudgetAllocationAndDistributionLabel" layoutX="14.0" layoutY="175.0" prefHeight="104.0" prefWidth="235.0" style="-fx-background-color: red;" text="Update Budget Allocation and Distribution" />
+      <Button layoutX="473.0" layoutY="50.0" mnemonicParsing="false" onAction="#validateButton" text="Validate Budget" />
+      <Label fx:id="totalAvailableBudgetLabel" layoutX="14.0" layoutY="359.0" prefHeight="63.0" prefWidth="235.0" style="-fx-background-color: red;" text="Total Available Budget" />
+      <TextField fx:id="totalBudgetTextField" layoutX="459.0" layoutY="184.0" />
+      <Label fx:id="validationLabel" layoutX="14.0" layoutY="286.0" prefHeight="63.0" prefWidth="235.0" style="-fx-background-color: red;" text="Validation Status" />
+      <Label layoutX="330.0" layoutY="184.0" prefHeight="25.0" prefWidth="108.0" text="Enter total budget">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="473.0" layoutY="90.0" mnemonicParsing="false" onAction="#distributeButton" text="Distribute" />
+      <Label fx:id="distributionStatusLabe" layoutX="266.0" layoutY="359.0" prefHeight="63.0" prefWidth="235.0" style="-fx-background-color: red;" text="Distribution Status" />
+      <Button layoutX="473.0" layoutY="124.0" mnemonicParsing="false" onAction="#showDistributionButton" text="Show Distribution" />
+   </children>
 </AnchorPane>

@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>simulating_operations_of_an_Education_board_such_as_Dhaka_Education_Board</artifactId>
+    <artifactId>DhakaEducationBoard</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>simulating_operations_of_an_Education_board_such_as_Dhaka_Education_Board</name>
+    <name>DhakaEducationBoard</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,12 +18,12 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>21</version>
+            <version>17.0.6</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>21</version>
+            <version>17.0.6</version>
         </dependency>
 
         <dependency>
@@ -47,8 +47,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
                 <configuration>
-                    <source>21</source>
-                    <target>21</target>
+                    <source>23</source>
+                    <target>23</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.example.simulating_operations_of_an_education_board_such_as_dhaka_education_board/com.example.simulating_operations_of_an_education_board_such_as_dhaka_education_board.HelloApplication
+                                com.example.dhakaeducationboard/com.example.dhakaeducationboard.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

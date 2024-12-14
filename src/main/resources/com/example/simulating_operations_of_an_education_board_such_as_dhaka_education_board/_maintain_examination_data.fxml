@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="medBD" prefHeight="633.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dhakaeducationboard.Sabbir.MaintainExaminationData">
+   <children>
+      <Label layoutX="60.0" layoutY="22.0" text="Maintain Examination Data">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="uqbJS" layoutX="60.0" layoutY="60.0" prefHeight="18.0" prefWidth="131.0" text="Upload Question BanK" />
+      <Label fx:id="edsBD" layoutX="60.0" layoutY="111.0" text="Edit Exam Schedule" />
+      <Label fx:id="vedBF" layoutX="142.0" layoutY="186.0" text="View Exam Data" />
+      <Label fx:id="vediJSJ" layoutX="339.0" layoutY="195.0" text="Verify Exam Data Integrity" />
+      <Label fx:id="ljHG" layoutX="537.0" layoutY="250.0" text="Logs" />
+      <Button fx:id="rvVD" layoutX="512.0" layoutY="191.0" mnemonicParsing="false" onAction="#handleVerifyExamData" text="Run VerificatioN" />
+      <Button fx:id="vsdUJS" layoutX="126.0" layoutY="493.0" mnemonicParsing="false" onAction="#handleViewExamData" text="View Selected Data" />
+      <Button fx:id="upJH" layoutX="276.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleUploadQuestionBank" text="Upload" />
+      <Button fx:id="oseJH" layoutX="265.0" layoutY="107.0" mnemonicParsing="false" onAction="#handleEditExamSchedule" text="Open Schedule Editor" />
+      <TableView layoutX="40.0" layoutY="259.0" prefHeight="200.0" prefWidth="302.0">
+        <columns>
+          <TableColumn fx:id="exUD" prefWidth="75.0" text="Exam ID" />
+          <TableColumn fx:id="suBS" prefWidth="75.0" text="Subject" />
+            <TableColumn fx:id="daHS" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="suHAY" prefWidth="75.0" text="Status" />
+        </columns>
+      </TableView>
+      <TextArea layoutX="463.0" layoutY="317.0" prefHeight="200.0" prefWidth="200.0" promptText="logArea" />
+   </children>
+</AnchorPane>

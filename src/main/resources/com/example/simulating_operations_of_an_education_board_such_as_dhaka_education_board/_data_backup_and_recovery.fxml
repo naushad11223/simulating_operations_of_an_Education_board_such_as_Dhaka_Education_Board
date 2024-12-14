@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="638.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dhakaeducationboard.Sabbir.DataBackupAndRecovery">
+   <children>
+      <Label fx:id="lpJHGG" layoutX="56.0" layoutY="54.0" text="Login Procedure" />
+      <Label fx:id="rbJH" layoutX="63.0" layoutY="133.0" text="Run Backup" />
+      <Label fx:id="bfHG" layoutX="56.0" layoutY="218.0" text="Backup Failure" />
+      <Label fx:id="necHG" layoutX="182.0" layoutY="218.0" text="No errors currently" />
+      <Label fx:id="rdGF" layoutX="60.0" layoutY="272.0" text="Restore Data" />
+      <Label fx:id="vblJHJ" layoutX="446.0" layoutY="272.0" text="View Backup Logs" />
+      <Button fx:id="fpKHJS" layoutX="154.0" layoutY="86.0" mnemonicParsing="false" onAction="#ForgotPassword" text="Forgot Password" />
+      <Button fx:id="lgHJ" layoutX="60.0" layoutY="86.0" mnemonicParsing="false" onAction="#Login" text="Login" />
+      <Button fx:id="slJGA" layoutX="592.0" layoutY="268.0" mnemonicParsing="false" onAction="#ShowLogs" text="Show Logs" />
+      <Button fx:id="sbBA" layoutX="60.0" layoutY="168.0" mnemonicParsing="false" onAction="#StartBackup" text="Start Backup" />
+      <Button fx:id="sbrJHD" layoutX="180.0" layoutY="268.0" mnemonicParsing="false" onAction="#SelectBackuptoRestore" text="Select Backup to Restore" />
+      <Label fx:id="dbJH" layoutX="52.0" layoutY="14.0" text="Data Backup">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ProgressBar layoutX="183.0" layoutY="172.0" prefWidth="200.0" progress="0.0" />
+      <ListView layoutX="54.0" layoutY="319.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextArea layoutX="466.0" layoutY="319.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

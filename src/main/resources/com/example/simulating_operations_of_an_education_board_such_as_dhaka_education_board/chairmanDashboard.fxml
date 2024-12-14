@@ -1,14 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.simulating_operations_of_an_education_board_such_as_dhaka_education_board.ChairmanDashboardController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="427.0" prefWidth="619.0" style="-fx-background-color: #316969;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_education_board_such_as_dhaka_education_board.ChairmanDashboardController">
+   <children>
+      <Text layoutX="170.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chairman Dashboard" wrappingWidth="297.755859375">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Button layoutX="51.0" layoutY="69.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="143.0" text="Add Policy">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="319.0" layoutY="69.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="243.0" text="Approve BudgetAllocations">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="319.0" layoutY="118.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="243.0" text="Conduct Board Meetings">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="319.0" layoutY="168.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="243.0" text="Handle Disciplinary Actions">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="30.0" layoutY="168.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="186.0" text="Notify Departments">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="220.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="243.0" text="Notify Examination Centers">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="44.0" layoutY="118.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="158.0" text="Review Accounts">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="319.0" layoutY="220.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="263.0" text="Schedules For Student Access">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="136.0" layoutY="291.0" prefHeight="49.0" prefWidth="280.0" style="-fx-background-color: red;" text="Notification Label" />
+      <Button layoutX="222.0" layoutY="348.0" mnemonicParsing="false" text="Clear Notification" />
+   </children>
 </AnchorPane>

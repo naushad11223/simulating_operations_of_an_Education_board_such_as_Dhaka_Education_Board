@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dhakaeducationboard.Sabbir.OverseeSystemSecurity">
+   <children>
+      <Label fx:id="oisNH" layoutX="193.0" layoutY="14.0" text="Oversee IT Security">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="vslJS" layoutX="65.0" layoutY="77.0" mnemonicParsing="false" onAction="#ViewSecurityLogs" text="View Security Logs" />
+      <Button fx:id="mfkIW" layoutX="234.0" layoutY="77.0" mnemonicParsing="false" onAction="#ManageFirewall" text="Manage Firewall" />
+      <Button fx:id="rssBF" layoutX="406.0" layoutY="77.0" mnemonicParsing="false" onAction="#RunSecurityScan" text="Run Security Scan" />
+      <TableView layoutX="186.0" layoutY="153.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="loBF" prefWidth="75.0" text="Log ID" />
+          <TableColumn fx:id="dtBE" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="defVD" prefWidth="75.0" text="Description" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

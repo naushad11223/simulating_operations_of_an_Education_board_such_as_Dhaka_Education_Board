@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="upiNGD" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dhakaeducationboard.Sabbir.UpdatePersonalInformation">
+   <children>
+      <Label layoutX="155.0" layoutY="40.0" text="Update Personal Information">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="unMJ" layoutX="80.0" layoutY="152.0" onAction="#UpdateName" promptText="Update Name" />
+      <TextField fx:id="upeMJD" layoutX="283.0" layoutY="152.0" onAction="#UpdateEmailkd" promptText="Update Email" />
+      <Button fx:id="sugNF" layoutX="204.0" layoutY="233.0" mnemonicParsing="false" onAction="#SubmitUpdatedk" text="Submit Update" />
+   </children>
+</AnchorPane>

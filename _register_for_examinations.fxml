@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="scCW" prefHeight="451.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dhakaeducationboard.Sabbir.RegisterForExaminations">
+   <children>
+      <Label fx:id="rfeAS" layoutX="88.0" layoutY="79.0" prefHeight="22.0" prefWidth="181.0" text="Register for examination">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="cesADE" layoutX="99.0" layoutY="189.0" prefHeight="22.0" prefWidth="174.0" text="Confirmation Email Sent">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="srfFV" layoutX="342.0" layoutY="75.0" mnemonicParsing="false" onAction="#SubmitRegistrationForm" text="Submit Registration Form ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="prfJN" layoutX="360.0" layoutY="185.0" mnemonicParsing="false" onAction="#PayRegistrationFee" text="Pay Registration Fee">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
